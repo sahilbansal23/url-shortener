@@ -35,7 +35,7 @@ const getMainUrl = async (req, res) => {
 
   try {
     const urlEntry = await URL.findOne({ shortId });
-    if(urlEntry===null){
+    if (urlEntry === null) {
       return res.status(404).json({ message: "URL not found" });
     }
     // console.log(`url entry found ${urlEntry}`);

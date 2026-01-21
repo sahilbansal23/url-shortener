@@ -12,7 +12,7 @@ connectDB(process.env.DATABASE_URL).then((result) => {
   }
 });
 
-app.use(express.json());// to parse the incoming requests
+app.use(express.json()); // to parse the incoming requests
 const shorturlspi = require("./routes/url");
 
 // Sample route
